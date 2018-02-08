@@ -77,4 +77,10 @@ gulp.task('build', ['clean','img', 'sass', 'scripts'], function(){
        .pipe(gulp.dest('dist'));
     var buildPHP = gulp.src('app/*.php')
         .pipe(gulp.dest('dist'));
+    var buildajax = gulp.src('app/ajax/**/*')
+        .pipe(gulp.dest('dist/ajax'));
+    var buildblcks = gulp.src('app/blocks/**/*')
+        .pipe(gulp.dest('dist/blocks'));
+    var buildfunc = gulp.src('app/functions/**/*')
+        .pipe(gulp.dest('dist/functions'));
 });

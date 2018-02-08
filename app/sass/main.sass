@@ -1,5 +1,5 @@
 @charset "UTF-8"
-$silver: #020001
+$silver: silver
 $white: white
 $text: #333
 $shadow: #3d3d3d
@@ -43,7 +43,7 @@ header
   width: 98%
   padding: 1%
   @include float
-  background: #fafafa
+  background: linear-gradient(to top right, $blue,$white,$a)
   border-bottom: 2px solid $silver
   margin-bottom: 20px
   #logo
@@ -227,7 +227,9 @@ footer
         @include smallShadow
   // Style right Column
   #rightCol
+    //position: absolute
     width: 25%
+    margin-right: 0
     @include float
     .banner
       width: 100%
